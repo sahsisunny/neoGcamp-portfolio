@@ -223,6 +223,7 @@ nav {
      padding: .5rem 1rem;
      transition: all 0.5s ease;
      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+     margin: 1rem;
 }
 
 .btn3:hover {
@@ -281,7 +282,149 @@ footer p {
      border: 1px solid white
 }
 
+.project-list {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+     margin: 1rem;
+}
 
+.project {
+     width: 80%;
+     height: 30%;
+     display: flex;
+     flex-direction: row;
+     padding: 2rem;
+     border-radius: 10px;
+     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+     transition: all 0.5s ease;
+}
+
+.project:hover {
+     box-shadow: 5px 5px 20px rgb(65, 11, 244);
+}
+
+.project-info {
+     width: 50%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+
+.project-info h1 {
+     font-size: 2rem;
+     font-weight: 600;
+     color: rgb(0, 0, 0);
+     margin-bottom: 1rem;
+}
+
+.project-info p {
+     font-size: 1rem;
+     font-weight: 500;
+     color: rgb(0, 0, 0);
+     margin-bottom: 1rem;
+}
+
+.buttons {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 100%;
+}
+
+.project-img {
+     width: 50%;
+     height: 80%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+.project-img img {
+     width: 80%;
+     height: 80%;
+     border-radius: 10px;
+     box-shadow: 0 5px 10px rgba(204, 0, 0, 0.2);
+}
+
+.project-img img:hover {
+     /* ROtate image */
+     transform: rotate(5deg);
+}
+
+
+.blog-items {
+     margin: 1rem;
+     width: 85%;
+     padding: 3rem;
+
+}
+
+.blog-items h1 {
+     font-size: 2rem;
+     font-weight: 600;
+     color: rgb(0, 0, 0);
+     margin-bottom: 1rem;
+}
+
+.blog-items h2 {
+     font-size: 1.5rem;
+     font-weight: 600;
+     color: rgb(0, 0, 0);
+     margin-bottom: 1rem;
+}
+
+.blog-items p {
+     font-size: 1rem;
+     font-weight: 500;
+     color: rgb(0, 0, 0);
+     margin-bottom: 1rem;
+     margin: 1rem;
+}
+
+.blog-items ul {
+     margin: 1rem;
+     font-size: 1rem;
+     font-weight: 500;
+     color: rgb(0, 0, 0);
+     margin-left: 3rem;
+}
+
+.blog-items ol {
+     font-size: 1rem;
+     margin: 1rem;
+     font-weight: 500;
+     color: rgb(0, 0, 0);
+     margin-left: 3rem;
+}
+
+
+.author-details {
+     display: flex;
+     flex-direction: row;
+     margin: 1rem;
+     float: right;
+     flex-wrap: wrap;
+     align-content: center;
+     justify-content: center;
+     align-items: center;
+     width: 30%;
+}
+
+
+.author-details img{
+     width: 10%;
+     border-radius: 50%;
+}
+
+.author-details p{
+     font-size: 1rem;
+     font-weight: 500;
+     color: rgb(0, 0, 0);
+     margin-bottom: 1rem;
+}
 
 /* Media Query */
 
