@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <title>What is NodeJS?</title>
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+          integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+     <!-- Navbar -->
+     <nav>
+          <div class="logo">
+               <a href="index.html">Sunny Sahsi</a>
+          </div>
+          <div class="navbar">
+               <ul class="right">
+                    <li><a class="btn" href="index.html">Home</a></li>
+                    <li><a class="btn" href="project.html">Projects</a></li>
+                    <li><a class="btn" href="blogs.html">Blog</a></li>
+               </ul>
+          </div>
+     </nav>
+     <!-- End Navbar -->
+
+     <section class="blog-items">
+          <h1 id="notes">neoG.camp Level Two Notes</h1>
+          <h2 id="exercises-of-this-lesson-1">Exercises of this lesson 1</h2>
+          <ol>
+               <li>Explain to a 10-year-old what is git</li>
+               <li>Initialize a git repository</li>
+               <li>Create the file in the repository</li>
+               <li>Commit the first change</li>
+               <li>Understanding commit messages</li>
+               <li>Publish to Github</li>
+               <li>Add README.md and commit</li>
+          </ol>
+          <h2 id="exercises-of-this-lesson-2">Exercises of this lesson 2</h2>
+          <ol>
+               <li>Explain how to internet works</li>
+               <li>Setup netlify to deploy the website</li>
+               <li>check deploy</li>
+               <li>Change the domain name</li>
+          </ol>
+          <h2 id="exercises-of-this-lesson-3">Exercises of this lesson 3</h2>
+          <ol>
+               <li>take a tour of vscode</li>
+               <li>try some shortcuts</li>
+          </ol>
+          <h2 id="exercises-of-this-lesson-4">Exercises of this lesson 4</h2>
+          <ol>
+               <li>knowing how a dev in a team works?</li>
+               <li>create a branch</li>
+               <li>Do the change in the branch</li>
+               <li>open a pull request(PR)</li>
+               <li>merge the PR</li>
+               <li>going back to main</li>
+          </ol>
+          <h2 id="1-1-explain-to-a-10-year-old-what-is-git">1.1 Explain to a 10-year-old what is git</h2>
+          <ul>
+               <li>git is a version control system that allows you to keep track of changes in your code and collaborate
+                    with
+                    other developers.</li>
+          </ul>
+          <h2 id="1-2-initialize-a-git-repository">1.2 Initialize a git repository</h2>
+          <ul>
+               <li>git init - we initialize a git repository in the current folder (the folder where we are located) and
+                    we can
+                    see that a new folder called .git has been created. This folder contains all the information about
+                    the
+                    repository. We can see that the folder is hidden because it starts with a dot. If we want to see the
+                    hidden
+                    files we can use the command ls -a. We can also use the command git status to see the status of the
+                    repository.</li>
+          </ul>
+          <h2 id="1-3-create-the-file-in-the-repository">1.3 Create the file in the repository</h2>
+          <ul>
+               <li>We create a file called index.html and we add some content to it. We can see that the file is not
+                    being tracked
+                    by git. We can see this by using the command git status. We can add the file to the repository using
+                    the
+                    command git add index.html. We can see that the file is now being tracked by git. We can see this by
+                    using the
+                    command git status. We can also use the command git add . to add all the files in the current folder
+                    to the
+                    repository.</li>
+          </ul>
+          <h2 id="1-4-commit-the-first-change">1.4 Commit the first change</h2>
+          <ul>
+               <li>We can commit the changes using the command git commit -m &quot;first commit&quot;. We can see that
+                    the file is
+                    now being tracked by git. We can see this by using the command git status. We can also use the
+                    command git add
+                    . to add all the files in the current folder to the repository.</li>
+          </ul>
+          <h2 id="1-5-understanding-commit-messages">1.5 Understanding commit messages</h2>
+          <ul>
+               <li><strong>feat</strong> - A new feature</li>
+               <li><strong>fix</strong> - A bug fix</li>
+               <li><strong>docs</strong> - Documentation only changes</li>
+               <li><strong>style</strong> - Changes that do not affect the meaning of the code (white-space, formatting,
+                    missing
+                    semi-colons, etc)</li>
+               <li><strong>refactor</strong> - A code change that neither fixes a bug nor adds a feature</li>
+               <li><strong>perf</strong> - A code change that improves performance</li>
+               <li><strong>test</strong> - Adding missing tests or correcting existing tests</li>
+               <li><strong>chore</strong> - Changes to the build process or auxiliary tools and libraries such as
+                    documentation
+                    generation</li>
+               <li><strong>revert</strong> - Reverting a previous commit</li>
+               <li><strong>WIP</strong> - Work in progress</li>
+          </ul>
+          <h2 id="1-6-publish-to-github">1.6 Publish to Github</h2>
+          <ul>
+               <li>We can publish the repository to github using the command git push origin master. We can see that the
+                    repository has been published to github. We can see this by going to github and checking the
+                    repository.</li>
+          </ul>
+          <h2 id="1-7-add-readme-md-and-commit">1.7 Add README.md and commit</h2>
+          <ul>
+               <li>We can add the file README.md to the repository using the command git add README.md. We can see that
+                    the file
+                    is now being tracked by git. We can see this by using the command git status. We can commit the
+                    changes using
+                    the command git commit -m &quot;add README.md&quot;. We can see that the file is now being tracked
+                    by git. We
+                    can see this by using the command git status.</li>
+          </ul>
+          <h2 id="2-1-explain-how-to-internet-works">2.1 Explain how to internet works</h2>
+          <ul>
+               <li>When we type a URL in the browser, the browser sends a request to the DNS server to get the IP
+                    address of the
+                    server. The DNS server sends the IP address to the browser. The browser sends a request to the
+                    server using
+                    the IP address. The server sends a response to the browser. The browser renders the response.</li>
+          </ul>
+          <h2 id="2-2-setup-netlify-to-deploy-the-website">2.2 Setup netlify to deploy the website</h2>
+          <ul>
+               <li>Netlify is a service that allows us to deploy our website. it is a hosting platform. We can deploy
+                    our website
+                    to netlify by going to netlify.com and clicking on the button &quot;New site from Git&quot;. We can
+                    select the
+                    repository that we want to deploy. We can select the branch that we want to deploy. We can select
+                    the folder
+                    that contains the website. We can click on the button &quot;Deploy site&quot;. We can see that the
+                    website has
+                    been deployed to netlify. We can see this by going to netlify.com and checking the website.</li>
+          </ul>
+          <h2 id="2-3-check-deploy">2.3 check deploy</h2>
+          <ul>
+               <li>We can check the deploy by going to the website and checking the website.</li>
+          </ul>
+          <h2 id="2-4-change-the-domain-name">2.4 Change the domain name</h2>
+          <ul>
+               <li>We can change the domain name by going to netlify.com and clicking on the website. We can click on
+                    the button
+                    &quot;Domain settings&quot;. We can click on the button &quot;Edit site name&quot;. We can change
+                    the name of
+                    the website. We can click on the button &quot;Save&quot;. We can see that the name of the website
+                    has been
+                    changed. We can see this by going to netlify.com and checking the website.</li>
+          </ul>
+          <h2 id="3-1-take-a-tour-of-vscode">3.1 take a tour of vscode</h2>
+          <ul>
+               <li>Visual Studio Code is a code editor. It is a text editor that has some features that make it easier
+                    to write
+                    code. It has syntax highlighting, code completion, code snippets, code refactoring, debugging,
+                    integrated
+                    terminal, version control integration, and many more.</li>
+          </ul>
+          <h2 id="3-2-try-some-shortcuts-in-vscode-for-windows">3.2 try some shortcuts in vscode for Windows</h2>
+          <ul>
+               <li>Ctrl + Shift + P - Open command palette</li>
+               <li>Ctrl + P - Open quick open</li>
+               <li>Ctrl + Shift + N - New window</li>
+               <li>Ctrl + Shift + W - Close window</li>
+               <li>Ctrl + Shift + Tab - Switch to previous window</li>
+               <li>Ctrl + N - New file</li>
+               <li>Ctrl + O - Open file</li>
+               <li>Ctrl + S - Save file</li>
+               <li>Ctrl + Shift + S - Save file as</li>
+               <li>Ctrl + F4 - Close file</li>
+               <li>Ctrl + W - Close editor</li>
+               <li>Ctrl + Shift + T - Reopen closed editor</li>
+               <li>Ctrl + F - Find</li>
+               <li>Ctrl + H - Replace</li>
+               <li>Ctrl + Shift + F - Find in files</li>
+               <li>Ctrl + Shift + H - Replace in files</li>
+               <li>Ctrl + Shift + V - Open preview to the side</li>
+               <li>Ctrl + K V - Open preview</li>
+               <li>Ctrl + K Z - Toggle word wrap</li>
+               <li>Ctrl + K Ctrl + F - Format document</li>
+               <li>Ctrl + K Ctrl + O - Fold all block comments</li>
+               <li>Ctrl + K Ctrl + I - Fold all regions</li>
+               <li>Ctrl + K Ctrl + 0 - Fold level 1</li>
+               <li>Ctrl + K Ctrl + 1 - Fold level 2</li>
+          </ul>
+          <h2 id="4-1-knowing-how-a-dev-in-a-team-works-">4.1 knowing how a dev in a team works?</h2>
+          <ul>
+               <li>A developer in a team works by creating a branch. The developer makes the changes in the branch. The
+                    developer
+                    opens a pull request(PR). The pull request(PR) is reviewed by another developer. The pull
+                    request(PR) is
+                    merged. The developer goes back to the main branch.</li>
+               <li>We can create a branch using the command git checkout -b feature/first-branch. We can see that we are
+                    now in
+                    the branch feature/first-branch. We can see this by using the command git branch. We can make the
+                    changes in
+                    the branch. We can open a pull request(PR) by going to github and clicking on the button
+                    &quot;Compare &amp;
+                    pull request&quot;. We can add a title and a description to the pull request(PR). We can click on
+                    the button
+                    &quot;Create pull request&quot;. We can see that the pull request(PR) has been created. We can see
+                    this by
+                    going to github and checking the pull request(PR). We can merge the pull request(PR) by going to
+                    github and
+                    clicking on the button &quot;Merge pull request&quot;. We can click on the button &quot;Confirm
+                    merge&quot;.
+                    We can see that the pull request(PR) has been merged. We can see this by going to github and
+                    checking the pull
+                    request(PR). We can go back to the main branch using the command git checkout master. We can see
+                    that we are
+                    now in the branch master. We can see this by using the command git branch.</li>
+          </ul>
+          <h2 id="4-2-create-a-branch">4.2 create a branch</h2>
+          <ul>
+               <li>We can create a branch using the command git checkout -b feature/first-branch. We can see that we are
+                    now in
+                    the branch feature/first-branch. We can see this by using the command git branch.</li>
+          </ul>
+          <h2 id="4-3-make-some-changes-in-the-branch">4.3 make some changes in the branch</h2>
+          <ul>
+               <li>We can make the changes in the branch. We can add the file index.html to the repository using the
+                    command git
+                    add index.html. We can see that the file is now being tracked by git. We can see this by using the
+                    command git
+                    status. We can commit the changes using the command git commit -m &quot;add index.html&quot;. We can
+                    see that
+                    the file is now being tracked by git. We can see this by using the command git status. We can add
+                    the file
+                    README.md to the repository using the command git add README.md. We can see that the file is now
+                    being tracked
+                    by git. We can see this by using the command git status. We can commit the changes using the command
+                    git
+                    commit -m &quot;add README.md&quot;. We can see that the file is now being tracked by git. We can
+                    see this by
+                    using the command git status.</li>
+          </ul>
+          <h2 id="4-4-open-a-pull-request">4.4 open a pull request</h2>
+          <ul>
+               <li>We can open a pull request(PR) by going to github and clicking on the button &quot;Compare &amp; pull
+                    request&quot;. We can add a title and a description to the pull request(PR). We can click on the
+                    button
+                    &quot;Create pull request&quot;. We can see that the pull request(PR) has been created. We can see
+                    this by
+                    going to github and checking the pull request(PR).</li>
+          </ul>
+          <h2 id="4-5-merge-the-pull-request">4.5 merge the pull request</h2>
+          <ul>
+               <li>We can merge the pull request(PR) by going to github and clicking on the button &quot;Merge pull
+                    request&quot;.
+                    We can click on the button &quot;Confirm merge&quot;. We can see that the pull request(PR) has been
+                    merged. We
+                    can see this by going to github and checking the pull request(PR).</li>
+          </ul>
+          <h2 id="4-6-go-back-to-the-main-branch">4.6 go back to the main branch</h2>
+          <ul>
+               <li>We can go back to the main branch using the command git checkout master. We can see that we are now
+                    in the
+                    branch master. We can see this by using the command git branch.</li>
+          </ul>
+
+          <div class="author-details">
+               <img src="https://pbs.twimg.com/profile_images/1409506850316324866/duEiiZ2K_400x400.jpg"
+                    alt="Sunny Sahsi">
+               <p>Sunny Sahsi</p>
+          </div>
+     </section>
+
+
+     <footer>
+          <p>© 2022 Sunny Sahsi</p>
+          <div class="social">
+               <a href="https://www.linkedin.com/in/sahsisunny/"><i class="fab fa-linkedin-in"></i></a>
+               <a href="https://www.github.com/sahsisunny"><i class="fab fa-github"></i></a>
+               <a href="https://twitter.com/SunnySahsi"><i class="fab fa-twitter"></i></a>
+               <a href="https://www.instagram.com/sahsisunny/"><i class="fab fa-instagram"></i></a>
+          </div>
+     </footer>
+
+</body>
+
+</html>
