@@ -68,6 +68,8 @@ nav {
      transition: all 0.5s ease;
 }
 
+
+/* Home Section */
 .home {
      width: 80%;
      display: flex;
@@ -120,6 +122,8 @@ nav {
      margin-bottom: 1rem;
 }
 
+
+/* Project */
 .projects {
      background-color: white;
 }
@@ -414,12 +418,12 @@ footer p {
 }
 
 
-.author-details img{
+.author-details img {
      width: 10%;
      border-radius: 50%;
 }
 
-.author-details p{
+.author-details p {
      font-size: 1rem;
      font-weight: 500;
      color: rgb(0, 0, 0);
@@ -430,11 +434,74 @@ footer p {
 
 @media screen and (max-width: 768px) {
      nav {
-          height: 50px;
+          height: 70px;
+     }
+
+     .home h1 {
+          font-size: 2rem;
+     }
+
+     .home p {
+          font-size: 1rem;
      }
 
      .sec-box {
-          height: 100px;
+          width: 100%;
+          padding: 1.5rem;
      }
+
+     /* Project */
+
+     .project {
+          flex-direction: column;
+
+     }
+
+     .project-list {
+          width: 100%;
+     }
+
+     .project-img {
+          width: 100%;
+          margin-bottom: 1rem;
+     }
+
+     .project-info {
+          width: 100%;
+     }
+
+     .project-info h1 {
+          font-size: 1.2rem;
+     }
+
+     .btn3 {
+          font-size: 1rem;
+     }
+
+     /* Blogs */
+     .blogs {
+          width: 80%;
+     }
+
+     .blogs-header {
+          height: 20vh;
+     }
+
+     .blogs-header h1 {
+          font-size: 2rem;
+     }
+
+     .blog-items{
+          width: 100%;
+     }
+
+     .author-details{
+          width: 100%;
+     }
+
+     .author-details img{
+          width: 8%;
+     }
+
 
 }
