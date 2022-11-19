@@ -262,6 +262,7 @@ nav {
      align-items: center;
      flex-wrap: wrap;
      margin: 1rem;
+     width: 100%;
 }
 
 .project {
