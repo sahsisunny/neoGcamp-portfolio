@@ -603,19 +603,23 @@ footer p {
           font-size: 2.5rem;
           flex-direction: column;
      }
-     table{
+
+     table {
           font-size: 2.5rem;
      }
-     th{
+
+     th {
           font-size: 2.5rem;
      }
-     tr,td{
+
+     tr,
+     td {
           font-size: 2.5rem;
      }
 }
 
 
-table{
+table {
      width: 100%;
      border-collapse: collapse;
      border: 1px solid rgb(0, 0, 0);
@@ -624,20 +628,30 @@ table{
      font-size: 1.2rem;
      margin: 1rem 0;
 }
-th{
+
+th {
      border: 1px solid #ccc;
      padding: 0.5rem;
      background: rgb(200, 196, 196);
      font-weight: bold;
      text-align: center;
 }
-tr, td{
+
+tr,
+td {
      border: 1px solid #ccc;
      padding: 0.5rem;
      text-align: center;
 }
 
-td a{
+td a {
      text-decoration: none;
      color: #000;
+}
+
+
+.anchor {
+     text-decoration: none;
+     color: #000;
+     font-weight: bold;
 }
