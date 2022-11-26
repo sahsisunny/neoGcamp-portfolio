@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <title>Interview Question 1</title>
+     <link rel="stylesheet" href="../../style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+          integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css">
+     <style>
+
+     </style>
+</head>
+
+<body>
+     <!-- Navbar -->
+     <nav>
+          <div class="logo">
+               <a href="../../index.html">Sunny Sahsi</a>
+          </div>
+          <div class="navbar">
+               <ul class="right">
+                    <li><a class="btn" href="../../index.html">Home</a></li>
+                    <li><a class="btn" href="../../project.html">Projects</a></li>
+                    <li><a class="btn" href="../../blogs.html">Blog</a></li>
+               </ul>
+          </div>
+     </nav>
+     <!-- End Navbar -->
+
+     <section class="blog-items">
+          <div class="header-details">
+               <h1 id="sample-q1">Sample Q1</h1>
+          </div>
+          <h2>
+               Create a web app which would take two inputs. It would also have 4 buttons: +, -, x /. Based on the
+               button
+               clicked
+               perform the operation on the two inputs. You can do this in React or vanillaJS based on your choice.
+          </h2>
+          <h4 style="font-size:30px;">HTML Code</h4>
+          <br>
+          <br>
+          <pre><code>
+&lt;body&gt;
+     &lt;section class=&quot;container&quot;&gt;
+          &lt;input type=&quot;number&quot; id=&quot;num1&quot; placeholder=&quot;Enter 1st Number&quot;&gt;
+          &lt;input type=&quot;number&quot; id=&quot;num2&quot; placeholder=&quot;Enter 2nd Number&quot;&gt;
+          &lt;button id=&quot;addition&quot;&gt;+&lt;/button&gt;
+          &lt;button id=&quot;subtraction&quot;&gt;-&lt;/button&gt;
+          &lt;button id=&quot;multiply&quot;&gt;*&lt;/button&gt;
+          &lt;button id=&quot;division&quot;&gt;/&lt;/button&gt;
+          &lt;p id=&quot;result&quot;&gt;&lt;/p&gt;
+     &lt;/section&gt;
+     &lt;script src=&quot;./script.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+          </code></pre>
+
+          <br>
+          <h4 style="font-size:30px;">JavaScript Code</h4>
+          <br>
+          <pre><code>
+const num1 = document.getElementById(&quot;num1&quot;);
+const num2 = document.getElementById(&quot;num2&quot;);
+
+const addBTN = document.querySelector(&quot;#addition&quot;);
+const subBTN = document.querySelector(&quot;#subtraction&quot;);
+const multiBTN = document.querySelector(&quot;#multiply&quot;);
+const divBTN = document.querySelector(&quot;#division&quot;);
+
+const result = document.querySelector(&quot;#result&quot;);
+
+function getData() {
+     const number1 = Number(num1.value);
+     const number2 = Number(num2.value);
+}
+
+function add() {
+     const number1 = Number(num1.value);
+     const number2 = Number(num2.value);
+     result.innerHTML = number1 + number2;
+}
+function sub() {
+     const number1 = Number(num1.value);
+     const number2 = Number(num2.value);
+     result.innerHTML = number1 - number2;
+}
+function multi() {
+     const number1 = Number(num1.value);
+     const number2 = Number(num2.value);
+     result.innerHTML = number1 * number2;
+}
+function div() {
+     const number1 = Number(num1.value);
+     const number2 = Number(num2.value);
+     result.innerHTML = number1 / number2;
+}
+
+addBTN.addEventListener('click', add)
+subBTN.addEventListener('click', sub)
+multiBTN.addEventListener('click', multi)
+divBTN.addEventListener('click', div)
+          </code></pre>
+          <br>
+          <div class="author-details">
+               <p>By - Sunny Sahsi</p>
+               <p>Published - 2022-11-26</p>
+          </div>
+     </section>
+     <footer>
+          <p>© 2022 Sunny Sahsi</p>
+          <div class="social">
+               <a href="https://www.linkedin.com/in/sahsisunny/"><i class="fab fa-linkedin-in"></i></a>
+               <a href="https://www.github.com/sahsisunny"><i class="fab fa-github"></i></a>
+               <a href="https://twitter.com/SunnySahsi"><i class="fab fa-twitter"></i></a>
+               <a href="https://www.instagram.com/sahsisunny/"><i class="fab fa-instagram"></i></a>
+          </div>
+     </footer>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+     <script>hljs.highlightAll();</script>
+
+</body>
+
+</html>

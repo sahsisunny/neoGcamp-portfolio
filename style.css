@@ -663,3 +663,7 @@ td a {
      flex-wrap: wrap;
      align-items: center;
 }
+
+code{
+     font-size: 1.5rem;
+}
