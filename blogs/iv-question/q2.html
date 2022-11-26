@@ -3,13 +3,13 @@
 
 <head>
      <meta charset="UTF-8">
-     <title>Interview Question 1</title>
+     <title>Interview Question 2</title>
      <link rel="stylesheet" href="../../style.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
           integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
           crossorigin="anonymous" referrerpolicy="no-referrer" />
      <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css">
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-light.min.css">
      <style>
 
      </style>
@@ -34,29 +34,24 @@
 
      <section class="blog-items">
           <div class="header-details">
-               <h1 id="sample-q1">Sample Q1</h1>  
+               <h1 id="sample-q1">Sample Q2</h1>
           </div>
           <h2>
-               Create a web app which would take two inputs. It would also have 4 buttons: +, -, x /. Based on the
-               button
-               clicked
-               perform the operation on the two inputs. You can do this in React or vanillaJS based on your choice.
+               Create a web app where I can input a text. Now create two buttons + and -. On clicking + increase the
+               fontSize by 2px
+               and vice versa.
+
           </h2>
+          <h1 style="text-align: center;">In VanilaJS</h1>
 
           <h4 style="font-size:30px;">HTML Code</h4>
           <br>
           <br>
           <pre><code>
 &lt;body&gt;
-     &lt;section class=&quot;container&quot;&gt;
-          &lt;input type=&quot;number&quot; id=&quot;num1&quot; placeholder=&quot;Enter 1st Number&quot;&gt;
-          &lt;input type=&quot;number&quot; id=&quot;num2&quot; placeholder=&quot;Enter 2nd Number&quot;&gt;
-          &lt;button id=&quot;addition&quot;&gt;+&lt;/button&gt;
-          &lt;button id=&quot;subtraction&quot;&gt;-&lt;/button&gt;
-          &lt;button id=&quot;multiply&quot;&gt;*&lt;/button&gt;
-          &lt;button id=&quot;division&quot;&gt;/&lt;/button&gt;
-          &lt;p id=&quot;result&quot;&gt;&lt;/p&gt;
-     &lt;/section&gt;
+     &lt;h1 id=&quot;text&quot;&gt;Hello&lt;/h1&gt;
+     &lt;button id=&quot;increase&quot;&gt;+&lt;/button&gt;
+     &lt;button id=&quot;decrease&quot;&gt;-&lt;/button&gt;
      &lt;script src=&quot;./script.js&quot;&gt;&lt;/script&gt;
 &lt;/body&gt;
           </code></pre>
@@ -65,48 +60,58 @@
           <h4 style="font-size:30px;">JavaScript Code</h4>
           <br>
           <pre><code>
-const num1 = document.getElementById(&quot;num1&quot;);
-const num2 = document.getElementById(&quot;num2&quot;);
+const textRes = document.querySelector("#text");
+const increaseBTN = document.querySelector("#increase");
+const decreaseBTN = document.querySelector("#decrease");
 
-const addBTN = document.querySelector(&quot;#addition&quot;);
-const subBTN = document.querySelector(&quot;#subtraction&quot;);
-const multiBTN = document.querySelector(&quot;#multiply&quot;);
-const divBTN = document.querySelector(&quot;#division&quot;);
-
-const result = document.querySelector(&quot;#result&quot;);
-
-function getData() {
-     const number1 = Number(num1.value);
-     const number2 = Number(num2.value);
+let fontSize = 32;
+function increase() {
+     fontSize += 2;
+     textRes.style.fontSize = `${fontSize}px`;
+}
+function decrease() {
+     fontSize -= 2;
+     textRes.style.fontSize = `${fontSize}px`;
 }
 
-function add() {
-     const number1 = Number(num1.value);
-     const number2 = Number(num2.value);
-     result.innerHTML = number1 + number2;
-}
-function sub() {
-     const number1 = Number(num1.value);
-     const number2 = Number(num2.value);
-     result.innerHTML = number1 - number2;
-}
-function multi() {
-     const number1 = Number(num1.value);
-     const number2 = Number(num2.value);
-     result.innerHTML = number1 * number2;
-}
-function div() {
-     const number1 = Number(num1.value);
-     const number2 = Number(num2.value);
-     result.innerHTML = number1 / number2;
-}
-
-addBTN.addEventListener('click', add)
-subBTN.addEventListener('click', sub)
-multiBTN.addEventListener('click', multi)
-divBTN.addEventListener('click', div)
+increaseBTN.addEventListener('click', increase);
+decreaseBTN.addEventListener('click', decrease);
           </code></pre>
           <br>
+          <h1 style="text-align: center;">In ReactJS</h1>
+          <h4 style="font-size:25px;">ReactJS Code</h4>
+          <br>
+          <pre><code>
+import { useState } from 'react';
+import './App.css';
+
+let size = 32;
+function App() {
+     const [fontsize, setFontSize] = useState(32);
+     const [value, setValue] = useState("");
+     function increaseSize() {
+          size += 2;
+          setFontSize(size)
+     }
+     function decreaseSize() {
+          size -= 2;
+          setFontSize(size)
+     }
+     function getValue(event) {
+          setValue(event.target.value)
+     }
+     return (
+     &lt;div className=&quot;App&quot;&gt;
+          &lt;h1 style={{ fontSize: fontsize }}&gt;{value}&lt;/h1&gt;
+          &lt;input type=&quot;text&quot; onChange={getValue}&gt;&lt;/input&gt;
+          &lt;button onClick={increaseSize}&gt;+&lt;/button&gt;
+          &lt;button onClick={decreaseSize}&gt;-&lt;/button&gt;
+     &lt;/div&gt;
+     );
+}
+export default App;
+          </code></pre>
+
           <div class="author-details">
                <p>By - Sunny Sahsi</p>
                <p>Published - 2022-11-26</p>
