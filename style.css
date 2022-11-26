@@ -655,3 +655,11 @@ td a {
      color: #000;
      font-weight: bold;
 }
+
+.author-details {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     flex-wrap: wrap;
+     align-items: center;
+}
